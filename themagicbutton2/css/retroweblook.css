@@ -1,0 +1,24 @@
+/* Font */
+
+@font-face {
+  font-family: retrowebfont1;
+  src: url("https://vistaserv.net/assets/TIMES.TTF-16-Regular-fa46b8e0f87ca255fb212abd7b50554b2c9335b09da60399ec65001cea25fa8b.woff");
+}
+
+/* Cursor */
+
+body {
+
+ cursor:url("http://www.rw-designer.com/cursor-extern.php?id=111512"), pointer;
+
+ cursor:url("http://www.rw-designer.com/cursor-extern.php?id=111529"), help;
+
+ cursor:url("http://www.rw-designer.com/cursor-extern.php?id=111509"), progress;
+
+ cursor:url("http://www.rw-designer.com/cursor-extern.php?id=111499"), wait;
+
+ cursor:url("http://www.rw-designer.com/cursor-extern.php?id=111514"), context-menu;
+
+ cursor:url("https://vistaserv.net/assets/cursor-0c72b462b452c3da60dc780d3294c2d9d4070cdf41479ed8f504981421d49350.png"), default;
+
+}

@@ -1,0 +1,12 @@
+/* Font Config */
+
+@font-face {
+  font-family: BOILED TRUNK;
+  src: url("BOILED TRUNK.ttf");
+}
+
+/* Font Apply */
+
+body {
+ font-family: BOILED TRUNK;
+}
