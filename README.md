@@ -14,8 +14,7 @@ The Magic Button 1 - December 12, 2022
 
 The Magic Button 2 - January 29, 2023
 
-Assorted Toons Theater - June 17, 2023
-
 Hanna Barbera Theater - June 19, 2023
 
+Assorted Toons Theater - July 6, 2023
 
