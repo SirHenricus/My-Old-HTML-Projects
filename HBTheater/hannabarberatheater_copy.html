@@ -1,0 +1,212 @@
+<title> - Hanna Barbera Theater - </title>
+
+<script src="HBtheatermovielist1_copy.js"></script>
+<script src="HBtheatermovielist2_copy.js"></script>
+
+<script>
+
+// THEATER NAVIGATION
+
+alert("Warning: There are a vast amount of video files in the theater and they are very large in size! Expect extreme slowdown!")
+
+var krazykomics = ["https://chezzkidsarchive.neocities.org/coolpizzalolol.mp4","https://tcrf.net/images/a/ad/Unused_Leftover_Sonic_X.mp4"];
+
+var comicbook = document.getElementById("comicmain");
+
+var comicindex = 0
+
+var albatross = comicindex + 1;
+
+function comicupdate() {
+    if (comicindex > krazykomics.length - 1) {
+        comicindex = krazykomics.length - 1
+    }
+
+    if (comicindex > krazykomics.length - 1) {
+        console.log("limit reach")
+    }
+
+    if (comicindex < 0) {
+        comicindex = 0
+    }
+
+    document.getElementById("comicmain").src = krazykomics[comicindex];
+
+    albatross = comicindex + 1
+
+    document.getElementById("comicname").innerHTML = "[ Show " + albatross + " ]";
+
+}
+
+
+function comicmove(dir) {
+    if (dir == "+") {
+        comicindex = comicindex + 1
+    }
+    if (dir == "-") {
+        comicindex = comicindex - 1
+    }
+
+    comicupdate();
+}
+
+if (krazykomics == []) {
+    console.warn("You did not set the contents of the 'krazykomics' list. Make sure to assign the contents before the 'theatermain' object in your page")
+}
+
+// Make sure to put a 'comicupdate' function call at the end of the page
+</script>
+
+<script>
+
+// MOVIE NAVIGATION
+
+var theaterselect = [yogibearmovies,yoyogimovies,newyogimovies,yogispacemovies,topcatmovies,cattanoogamovies,scrappydoo1movies,scrappydoo2movies,bearbunchmovies,paddingtonmovies,morrocomolemovies,kwickykoalamovies,preciouspupmovies,ricochetrabbitmovies,punkinpussmovies,hillbillybearsmovies,snagglepussmovies,pixiedixiemovies,huckleberrymovies,yogitreasuremovie,olympicsmovie,jetsonsmovie,bonusmovies];
+
+var movienamelist = ["Yogi Bear Show","Yo, Yogi","New Yogi Bear Show","Yogi Space Race","Top Cat","Cattanooga Cats","Scooby Doo & Scrappy Doo (70s Series)","Scooby Doo & Scrappy Doo (80s Series)","Hair Bear Bunch","Paddington Series","Secret Squirrel","Kwicky Koala","Precious Pup","Ricochet Rabbit","Punkin' Puss","Hill Billy Bears","Snagglepuss","Pixie & Dixie","Huckleberry Hound","Yogi Treasure Hunt","Laff-O-Lympics","The Jetsons","Bonus Movies"];
+
+var seriesindex = 0
+
+var guineafowl = seriesindex + 1
+
+function seriesupdate() { 
+
+if (seriesindex > theaterselect.length) {
+    if (seriesindex > theaterselect.length) {
+        seriesindex = theaterselect.length
+    }
+
+    if (seriesindex > theaterselect.length - 1) {
+        console.log("limit reach")
+    }
+
+    if (seriesindex < 0) {
+        seriesindex = 0
+    }
+ }
+ var guineafowl = seriesindex + 1
+
+ document.getElementById("seriesname").innerHTML = "=" + movienamelist[seriesindex] + "=";
+
+ krazykomics = theaterselect[seriesindex];
+}
+
+function seriesmove(dir) { 
+    if (dir == "+") {
+        seriesindex = seriesindex + 1
+    }
+    if (dir == "-") {
+        seriesindex = seriesindex - 1
+    }
+
+    if (seriesindex < 0) {
+     seriesindex = 0
+     console.log("series less than 0")
+    }
+    if (seriesindex > theaterselect.length - 1) {
+     seriesindex = theaterselect.length - 1
+     console.log("series greater than limit")
+    }
+
+    seriesupdate();
+    comicupdate();
+}
+
+</script>
+
+<script>
+
+// EXTRA STUFF
+
+var movieinfo = `
+This page is a compilation of Hanna-Barbera Cartoons. The video files are loaded the through archive.org website.
+
+The order of cartoons in the list go like this:
+
+Yogi Bear, Yo Yogi, New Yogi Bear Show, Yogi Space Race, Top Cat, Cattanooga Cats, Scooby Doo & Scrappy Doo (70s Series), Scooby Doo & Scrappy Doo (80s Series), Hair Bear Bunch, Paddington, Secret Squirrel, Kwicky Koala, Precious Pup, Ricochet Rabbit, Punkin Puss, Hill Billy Bears, Snagglepuss, Pixie & Dixie, Huckleberry Hound, Yogi Treasure Hunt, Laff-O-Lympics, The Jetsons, Bonus Movies
+
+This an HTML Project that I made on my free time. I wanted to be more familiar with Hanna-Barbera Cartoons.
+
+`
+
+function debugmov() {
+ console.log("there are " + krazykomics.length + " movies in this series");
+ console.log("current video file: " + document.getElementById("comicmain").src);
+}
+</script>
+
+<style>
+body {
+    background-color: navajowhite
+}
+
+#comicmain {
+    border: solid 10px
+}
+</style>
+
+<br>
+
+<center>
+
+    <h1> - Welcome To The Hanna Barbera Theatre - </h1>
+
+    <br>
+
+    <h2 id='seriesname'><em>=Funny Pizza Video=</em></h2>
+
+    <br>
+
+    <h2 id="comicname"> [ Show - ] </h2>
+
+    <video controls height="480" source src="https://chezzkidsarchive.neocities.org/wrongvideo.mp4" id='comicmain'> <h1> VIDEO ERROR! </h1> </video>
+
+    <br>
+
+    <hr>
+
+    <h4> Movie Controls </h4>
+
+    <button type="button" onclick=comicmove("-")>Previous Movie</button>
+    <button type="button" onclick=comicmove("+")>Next Movie</button>
+
+    <br>
+
+    <hr>
+ 
+    <h4> Series Controls </h4>
+    
+    <button type="button" onclick=seriesmove("-")>Previous Series</button>
+    <button type="button" onclick=seriesmove("+")>Next Series</button>
+
+    <br>
+
+    <hr>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <a href="https://en.wikipedia.org/wiki/Hanna-Barbera">
+        <b>-Information on Hanna Barbera-</b>
+    </a>
+
+    <br>
+    <br>
+
+    <a href="javascript:alert(movieinfo);">
+        <b>-Theater Description-</b>
+    </a>
+
+</center>
+
+<script>
+
+for (let i = 0; i < 3; i++) { 
+  krazykomics = theaterselect[0];
+  comicupdate();
+  seriesupdate();
+}
+
+</script>
