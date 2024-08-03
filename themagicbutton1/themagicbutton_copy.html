@@ -1,0 +1,642 @@
+
+<title> The Magic Button </title>
+
+<script src="js/helpfulfunctions.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<link rel="stylesheet" href="css/brazenbeige.css"
+
+<br>
+
+<script>
+
+// Music
+
+var music = new Audio('https://chezzkidsarchive.neocities.org/download(4).mp3');
+music.volume = 0.4;
+music.loop = true;
+
+function changemusic(song) {
+
+ music.pause();
+
+ music = new Audio(song);
+
+ music.volume = 0.4;
+ music.loop = true;
+
+ music.play();
+
+ console.info("Now Playing: " + song)
+
+}
+
+</script>
+
+<script>
+
+// Start Stuffs
+
+var snd_click = "https://invertedfate.com/sounds/key_click.mp3"
+
+var mus_haunteddisco = "https://web.archive.org/web/20211024020956id_/https://play.cprewritten.net/assets/content/global/audio/haunted_disco.mp3"
+var mus_static1 = "https://chezzkidsarchive.neocities.org/smiling.mp3"
+var mus_jaws = "https://web.archive.org/web/20211110230305id_/https://play.cprewritten.net/assets/content/global/audio/test_song.mp3"
+var mus_undertree = "https://chezzkidsarchive.neocities.org/underthetree.mp3"
+var mus_dojoamb = "https://web.archive.org/web/20210313023628id_/https://play.cprewritten.net/assets/content/global/audio/404.mp3"
+var mus_marksong1 = "https://chezzkidsarchive.neocities.org/sea.mp3"
+var mus_marksong3 = "https://chezzkidsarchive.neocities.org/ssong.mp3"
+var mus_elevati = "https://chezzkidsarchive.neocities.org/elevati.mp3"
+var mus_cvocal = "https://chezzkidsarchive.neocities.org/VLNTINECK_CVOCAL.mp3"
+var mus_tell = "https://chezzkidsarchive.neocities.org/atell.mp3"
+var mus_dabadee = "https://web.archive.org/web/20000816113054if_/http://www.aliendance.com:80/dabadee.wav"
+var mus_splatpunk = "https://cdn.wikimg.net/en/splatoonwiki/images/2/27/RotM_Ride_or_Fry.mp3"
+var mus_lithium = "assets/record_chezzkids_hallopartymus.wav"
+
+// old url is https://cdn.wikimg.net/en/splatoonwiki/images/f/fe/Alterna_Mission_6_%28Daft_Punk-ish%29.mp3
+
+var zenofpy = "The Zen of Python, by Tim Peters. Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex. Complex is better than complicated. Flat is better than nested. Sparse is better than dense. Readability counts. Special cases aren't special enough to break the rules. Although practicality beats purity. Errors should never pass silently. Unless explicitly silenced. In the face of ambiguity, refuse the temptation to guess. There should be one-- and preferably only one --obvious way to do it. Although that way may not be obvious at first unless you're Dutch. Now is better than never. Although never is often better than *right* now. If the implementation is hard to explain, it's a bad idea. If the implementation is easy to explain, it may be a good idea. Namespaces are one honking great idea -- let's do more of those!"
+
+var memoriesconvo = ["and right,","about,","here!","------------","Woah! You can really see the sky from here","this can be our little spot","away from all that junk","Can i ask you something?","is everything okay","Yeah its just.","All of this","You aren't making sense","I just want things to stay like this...","yeah","What is it?","your smile","its cute","Not as cute as yours","Your lips are like cherries","You flatter me","I'm so lucky. You have no idea","Trust me. I am the lucky one","You're warm","------------","Here, its getting late we should get out of here","will I see you tomorrow?","Of course"]
+
+// Magic Button Scripts
+
+function blackmagic() {
+
+ playsound(snd_click,0.4)
+
+ // randomnumber(1, 19)
+
+ var chance = randomnumber(1, 19)
+
+ console.log("Your Magic Number Is: " + chance)
+
+ if (chance == 1) {
+
+  var i = 0
+
+  while (i != 999) { 
+   document.write("<marquee> penis </marquee>") 
+   i = i + 1
+  }
+
+ } else if (chance == 2) {
+
+ changemusic(mus_haunteddisco)
+
+ document.write("<title> Zen Of Python </title>")
+
+ document.write("<style>")
+ document.write("body {")
+ document.write("background: navajowhite;")
+ document.write("}")
+ document.write("</style>")
+ 
+ document.write("<center>")
+ document.write("<img src=" + "'https://www.python.org/static/img/python-logo@2x.png' " + "height='100' " + "alt'semicolon'>")
+ document.write("<h1> " + zenofpy + " </h1>")
+ document.write("</center>")
+ document.write("<img src=" + "'https://chezzkidsarchive.neocities.org/smiley-faces7.gif' " + "height='90' " + "alt'cooler'>")
+
+ } else if (chance == 3) {
+
+ changemusic(mus_static1)
+ 
+ document.write("<img src=" + "'https://chezzkidsarchive.neocities.org/wawfw.png' " + "height='999' " + "alt':)'>")
+
+
+ } else if (chance == 4) {
+
+ alert("this is your last chance to turn back")
+ alert("ok, you asked for it")
+
+ changemusic(mus_jaws)
+ 
+ document.write("<title> LFMAO! </title>")
+
+ document.write("<style>")
+ document.write("body {")
+ document.write("background-color: blue;")
+ document.write("}")
+ document.write("</style>")
+
+ document.write("<center>")
+ document.write("<h1> This is Objective C Enclosure </h1>")
+ document.write("<img src=" + "'https://strongbadallthetimesogreat.com/sbplush_tantrum_left.gif' " + "height='210' " + "alt'sbzone'>")
+ document.write("<p> Objective-C is a general-purpose, object-oriented programming language that adds Smalltalk-style messaging to the C programming language. Originally developed by Brad Cox and Tom Love in the early 1980s, it was selected by NeXT for its NeXTSTEP operating system. Due to Apple macOS’s direct lineage from NeXTSTEP, Objective-C was the standard programming language used, supported, and promoted by Apple for developing macOS and iOS applications (via their respective APIs, Cocoa and Cocoa Touch) until the introduction of the Swift programming language in 2014. </p>")
+document.write("<img src=" + "'https://chezzkidsarchive.neocities.org/smiley-faces7.gif' " + "height='210' " + "alt'cooler'>")
+ document.write("</center>")
+
+ } else if (chance == 5) {
+
+   changemusic(mus_undertree)
+
+   document.write("<title> Rest In Peace </title>")
+
+   document.write("<script> console.log('a few kisses ago...')" + "</script" + ">")
+
+   document.write("<style>")
+   document.write("body {")
+   document.write("background-image: url('https://chezzkidsarchive.neocities.org/goodnight.jpg');")
+   document.write("font-family: Verdana;")
+   document.write("}")
+   document.write("h1 {")
+   document.write("color: white;")
+   document.write("}")
+   document.write("p {")
+   document.write("color: white;")
+   document.write("}")
+   document.write("h2 {")
+   document.write("color: white;")
+   document.write("}")
+   document.write("h3 {")
+   document.write("color: white;")
+   document.write("}")
+   document.write("</style>")
+
+   document.write("<center>")
+   document.write("<img src=" + "'https://chezzkidsarchive.neocities.org/dovec.gif' " + "height='100' " + "alt'will be missed'>")
+   document.write("<img src=" + "'https://chezzkidsarchive.neocities.org/lovely.PNG' " + "height='100' " + "alt'√ß©¥ßπ…˙ß¨∆≥˚≤'>")
+   document.write("<img src=" + "'https://chezzkidsarchive.neocities.org/dovec.gif' " + "height='100' " + "alt'will be missed?'>")
+   document.write("<br>")
+   document.write("<h2> -* Sarah R. Trills *- </h2>")
+   document.write("<h1> In Her Memories 1974-2003 </h1>")
+   document.write("<br>")
+   document.write("<br>")
+   document.write("<br>")
+   document.write("<br>")
+   document.write("<br>")
+   document.write("<br>")
+   document.write("<br>")
+   document.write("<br>")
+   document.write("</center>")
+   
+   document.write("<hr>")
+   document.write("<h2> A Conversation ??/?? 11:08 PM </h2>")
+   for (let i = 0; i < memoriesconvo.length; i++) {
+    document.write("<h3> " + memoriesconvo[i] + " </h3>")
+    if (i > 4) {
+     document.write("<br>")
+    }
+
+   document.write("<br>")
+   document.write("<br>")
+   document.write("<br>")
+   document.write("<br>")
+   document.write("<br>")
+   document.write("<br>")
+   document.write("<br>")
+   document.write("<br>")
+
+   }
+
+ } else if (chance == 6) {
+
+ changemusic(mus_dojoamb)
+
+ document.write("<title> I miss my friends </title>")
+
+ document.write("<style>")
+ document.write("body {")
+ document.write("background: blue;")
+ document.write("}")
+ document.write("</style>")
+
+ document.write("<center>")
+ document.write("<img src=" + "'https://web.archive.org/web/20210915014916id_/https://play.cprewritten.net/assets/content/global/stampbook/stamps/32@4x-0.png' " + "height='150' " + "alt'found'>")
+
+ document.write("<h2> You sure miss your friends, don't you? </h2>")
+ document.write("<h2> Don't worry, they'll be waiting for you soon </h2>")
+ document.write("<p> ;) </p>")
+ document.write("<br>")
+ document.write("</center>")
+
+ } else if (chance == 7) {
+
+ document.write("<title> WATCH HOMETSAR!!! </title>")
+
+ document.write("<style>")
+ document.write("body {")
+ document.write("background-image: url('https://old.homestarrunner.com/pomtile3.jpg');")
+ document.write("}")
+ document.write("</style>")
+
+ document.write("<h1> HOMESTAR 1999!!!1!! </h1>")
+ document.write("<iframe width='708' height='515' src='https://www.youtube.com/embed/7tBgb7I_EIU' title='Marshmallows Last Stand (1999) in 1080p' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>")
+
+ document.write("<br>")
+
+ } else if (chance == 8) {
+
+ changemusic(mus_marksong3);
+
+ document.write("<title> YA'LL NEED JESUS!! </title>")
+
+ document.write("<style>")
+ document.write("body {")
+ document.write("background-image: url('https://chezzkidsarchive.neocities.org/star.gif');")
+ document.write("color: white;")
+ document.write("font-family: Verdana;")
+ document.write("}")
+ document.write("</style>")
+
+ document.write("<center>")
+ document.write("<img src='https://chezzkidsarchive.neocities.org/button.gif' height='150' alt='Angelica'>")
+ document.write("<h1> For all the 'Jesus Needers' out there </h1>")
+ document.write("<br>")
+ document.write("<h2> For to us a child is born, to us a son is given, and the government will be on his shoulders. And he will be called Wonderful Counselor, Mighty God, Everlasting Father, Prince of Peace. </h2>")
+ document.write("<h3> ISAIAH 9:6 (NIV) </h3>")
+ document.write("</center>")
+ console.info("this is a joke on christians, any offense is unintentional")
+
+ } else if (chance == 9) {
+
+ changemusic(mus_elevati)
+
+ document.write("<title> cool art ;) </title>")
+
+ document.write("<style>")
+ document.write("body {")
+ document.write("background-image: url('https://chezzkidsarchive.neocities.org/sky.gif');")
+ document.write("color: black;")
+ document.write("font-family: Verdana;")
+ document.write("}")
+ document.write("</style>")
+
+ document.write("<center>")
+ document.write("<h1> Wanna see my cool art? </h1>")
+ document.write("<br>")
+ document.write("<br>")
+ document.write("<br>")
+ document.write("<br>")
+document.write("<img src='assets/jspaintkitchen.png'>")
+ document.write("</center>")
+
+ } else if (chance == 10) {
+
+ changemusic(mus_cvocal)
+ 
+ document.write("<title> I am so sorry </title>")
+
+ document.write("<style>")
+ document.write("body {")
+ document.write("background-image: url('https://chezzkidsarchive.neocities.org/Chezzy.png');")
+ document.write("}")
+ document.write("</style>")
+  
+ document.write("<center>")
+  document.write("<img src='https://chezzkidsarchive.neocities.org/goodbyeforever.png' height='150' alt='sorrysorrysorrysorrysorrysorrysorrysorrysorrysorry'>")
+ document.write("<p> I'm so sorry, Sarah </p>")
+ document.write("<p> ... </p>")
+ document.write("</center>")
+
+ } else if (chance == 11) {
+
+ document.write("<br>")
+
+ document.write("<style> body { background: orange; } </style>")
+
+ document.write("<title> Garfield Archives </title>")
+
+ document.write("<center>")
+
+ document.write("<iframe width='708' height='515' src='mbsub/garfieldansweringarchives.html'></iframe>")
+
+ document.write("<br>")
+
+ document.write("<img src='https://i.giphy.com/media/piO6cmvxIK0A05MNkY/giphy.webp' height='150' alt='garrsoup'>")
+
+ document.write("</center>")
+
+ document.write("<br>")
+
+ } else if (chance == 12) {
+
+ changemusic(mus_marksong1)
+
+ document.write("<title> enigmatic </title>")
+
+ document.write("<style>")
+ document.write("body {")
+ document.write("background-image: url('http://www.savewalterwhite.com/img/tile.png');")
+ document.write("}")
+ document.write("</style>")
+ 
+ document.write("<br>")
+ document.write("<center>")
+ document.write("<h1> do you consider yourself an enigma? </h1>")
+ document.write("<h2> because I do </h2>")
+
+ document.write("<img src='https://web.archive.org/web/19990421044406im_/http://www.hamsterdance.com/hamu.gif' height='250' alt='dodeodoo'>")
+ document.write("<img src='https://web.archive.org/web/19990421044406im_/http://www.hamsterdance.com/hamu.gif' height='250' alt='dodeodoo'>")
+ document.write("<img src='https://web.archive.org/web/19990421044406im_/http://www.hamsterdance.com/hamwalk.gif' height='250' alt='dodeodoo'>")
+ document.write("<img src='https://web.archive.org/web/19990421044406im_/http://www.hamsterdance.com/hamwalk.gif' height='250' alt='dodeodoo'>")
+ document.write("<br>")
+ document.write("<img src='https://web.archive.org/web/19990421044406im_/http://www.hamsterdance.com/hamu.gif' height='250' alt='dodeodoo'>")
+ document.write("<img src='https://web.archive.org/web/19990421044406im_/http://www.hamsterdance.com/hamu.gif' height='250' alt='dodeodoo'>")
+ document.write("<img src='https://web.archive.org/web/19990421044406im_/http://www.hamsterdance.com/hamwalk.gif' height='250' alt='dodeodoo'>")
+ document.write("<img src='https://web.archive.org/web/19990421044406im_/http://www.hamsterdance.com/hamwalk.gif' height='250' alt='dodeodoo'>")
+ document.write("<br>")
+ document.write("<img src='https://web.archive.org/web/19990421044406im_/http://www.hamsterdance.com/hamu.gif' height='250' alt='dodeodoo'>")
+ document.write("<img src='https://web.archive.org/web/19990421044406im_/http://www.hamsterdance.com/hamu.gif' height='250' alt='dodeodoo'>")
+ document.write("<img src='https://web.archive.org/web/19990421044406im_/http://www.hamsterdance.com/hamwalk.gif' height='250' alt='dodeodoo'>")
+ document.write("<img src='https://web.archive.org/web/19990421044406im_/http://www.hamsterdance.com/hamwalk.gif' height='250' alt='dodeodoo'>")
+ document.write("<br>")
+ document.write("</center>")
+
+ } else if (chance == 13) {
+
+ changemusic(mus_tell);
+
+ document.write("<title> HAMSTER GOD </title>")
+
+ document.write("<style>")
+ document.write("body {")
+ document.write("background-image: url('https://chezzkidsarchive.neocities.org/annoeye.png');")
+ document.write("}")
+ document.write("h2 {")
+ document.write("color: white;")
+ document.write("}")
+ document.write("</style>")
+
+ document.write("<center>")
+ document.write("<img src='https://web.archive.org/web/19990421044406im_/http://www.hamsterdance.com/gerbil.gif' height='250' alt='hamster god'>")
+ document.write("<br>")
+ document.write("<h2> ---* ALL HAIL THE HAMSTER GOD *--- </h2>")
+ document.write("<h2> The Hamster God is love </h2>")
+ document.write("<h2> The Hamster God is life </h2>")
+ document.write("<h2> The Hamster God is your savior </h2>")
+ document.write("<h2> The Hamster God is your only path to salvation </h2>")
+ document.write("<h2> The Hamster God is your only hope </h2>")
+ document.write("</center>")
+
+ } else if (chance == 14) {
+
+ music.play();
+
+ document.write("<title> Garfield Corner!!1!1!! </title>")
+
+ document.write("<style>")
+ document.write("body {")
+ document.write("background-image: url('http://web.archive.org/web/19980614014006im_/http://www.garfield.com/images/tile.gif');")
+ document.write("}")
+ document.write("</style>")
+
+ document.write("<br>")
+ document.write("<center>")
+ document.write("<h1> |== Welcome To The Garfield Spot! ==| </h1>")
+ document.write("<img src='http://web.archive.org/web/19980614014006im_/http://www.garfield.com/images/stuff.gif' height='90' alt='ginger cat'>")
+ document.write("<img src='http://web.archive.org/web/19980614014006im_/http://www.garfield.com/images/sign1.gif' height='90' alt='ginger cat'>") 
+ document.write("<br>")
+ document.write("<h3> This is a website to get caught up on all things Garfield. Powered by our community of dedicated fans of the lovable ginger cat. </h3>")
+ document.write("<img src='http://web.archive.org/web/19980614014006im_/http://www.garfield.com/images/news.gif' height='110' alt='ginger cat'>")
+ document.write("<h3> You can also talk amongst your fellow fans with our Blog Section! </h3>")
+ document.write("<br>")
+ document.write("<br>")
+ document.write("<img src='http://web.archive.org/web/19980614013208im_/http://www.garfield.com/images/bulletin2.gif' height='110' alt='ginger cat'>")
+ document.write("<br>")
+ document.write("<br>")
+ document.write("<marquee bgcolor='#00FFFF' border='0' scrolldelay='19' height='17' width='80%' behavior='alternate'>HAVE FUN!</marquee>")
+ document.write("<br>")
+ document.write("<hr>")
+ document.write("<br>")
+ document.write("<h2> Links: </h2>")
+ document.write("<ol>")
+ document.write("<li><a href='https://garfield.com'>Blog Threads</a></li>")
+ document.write("<li><a href='https://garfield.com'>News</a></li>")
+ document.write("<li><a href='http://web.archive.org/web/20010504100955/http://www.garfield.com/'>Official Garfield Website</a></li>")
+ document.write("<li><a href='https://garfield.com'>Fan-Made Comics</a></li>")
+ document.write("</ol>")
+ document.write("</center>")
+ document.write("<br>")
+ document.write("<br>")
+ document.write("<br>")
+ document.write("<br>")
+
+ } else if (chance == 15) {
+
+ document.write("<br>")
+
+ document.write("<style> body { background: navy; } </style>")
+
+ document.write("<title> Where are they? ;) </title>")
+
+ document.write("<center>")
+
+ document.write("<iframe width='800' height='800' src='mbsub/mbsub_doorwords.html'></iframe>")
+
+ document.write("<br>")
+
+ document.write("</center>")
+
+ document.write("<br>")
+
+ } else if (chance == 16) {
+
+  if (randomnumber(0,3) == 0) {
+   changemusic(mus_dabadee)
+  } else {
+   changemusic(mus_splatpunk)
+  }
+
+  document.write("<title> DANCE GIF BOOGIE!!!1! </title>")
+
+  document.write("<style>")
+  document.write("body {")
+  document.write("background-image: url('https://web.archive.org/web/20000511193915im_/http://www.aliendance.com/alien-bg1.gif');")
+  document.write("}")
+  document.write("h1 { color: white; }")
+  document.write("</style>")
+
+  document.write("<br>")
+
+  document.write("<center>")
+
+  document.write("<h1> Dance like nobody is watching ;) </h1>")
+
+  document.write("<br>")
+
+  document.write("<img src='https://web.archive.org/web/20000621203020im_/http://pikachudance.com/pika1.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000606102918im_/http://fishydance.com/fdance2.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20021128175924im_/http://hamsterdance.com/gif/hampton.gif' height='110' alt='dance! dance!'>")
+  
+  document.write("<img src='https://web.archive.org/web/20000823112940im_/http://www.angelfire.com/de/animaldance/images/frog13.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20020717012435im_/http://hampsterdance2.com/gif/gerbil-l.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000511124453im_/http://www.pikachudance.com/pika2.gif' height='110' alt='dance! dance!'>")
+  
+  document.write("<img src='https://web.archive.org/web/20000823054846im_/http://www.dancearound.com/Graphics/August/springcat.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000928192625im_/http://www.angelfire.com/de/animaldance/images/lion2.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000928211141im_/http://www.angelfire.com/de/animaldance/images/bird18.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000928023958im_/http://www.angelfire.com/de/animaldance/images/party2.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000918060313im_/http://www.angelfire.com/ca3/bunnydance/images/ani2bun.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000919133831im_/http://timboman.tripod.com/cartwheelcat.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000919133904im_/http://timboman.tripod.com/pinkcat.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20001027222721im_/http://home.golden.net/~getalong/cat1f.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20001027202728im_/http://home.golden.net/~getalong/cat.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000820182657im_/http://www.funsilly.com/images/dinosteg.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000820182852im_/http://www.funsilly.com/images/dinotricera.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20030308090847im_/http://www.netcolony.com/entertainment/sta1021cie/easter6.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20030308094925im_/http://www.netcolony.com/entertainment/sta1021cie/egg1.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20030308085431im_/http://www.netcolony.com/entertainment/sta1021cie/easter3.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20030308083435im_/http://www.netcolony.com/entertainment/sta1021cie/easter11.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20030308092801im_/http://www.netcolony.com/entertainment/sta1021cie/eastere1a.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000706221454im_/http://www.angelfire.com/pq/holloween/skulldance.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000824020847im_/http://home.golden.net/~getalong/cat2.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20040427141316im_/http://www.anchor.demon.co.uk/images/crazymice.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000827200958im_/http://tiggerdance.com/Graphics/construc.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://chezzkidsarchive.neocities.org/smiley-faces7.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000510181033im_/http://www.aliendance.com/walk2.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20020305031217im_/http://www.angelfire.com/mi3/thirdwatcher/spin.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000619110621im_/http://www.armadillodance.com/prop6.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20010611152050im_/http://www.angelfire.com/ca3/bunnydance/images/992.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20010628025331im_/http://www.angelfire.com/ca3/bunnydance/images/bunny.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000818051818im_/http://www.elmodance.com/Graphics/Elmo1.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000511160200im_/http://www.stickmandance.com/bk2.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000510012738im_/http://www.aliendance.com/mac.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000903182041im_/http://members.home.net/e-bailey/Dance/HobbesDancing2.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000816153921im_/http://www.dancearound.com/Graphics/August/0200.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000815103134im_/http://www.angelfire.com/anime/upsidedown/images/chocobo/choco.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000815103134im_/http://www.angelfire.com/anime/upsidedown/images/chowl.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000823054427im_/http://www.qwikpages.com/rockyroad/gigi/bird5.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://web.archive.org/web/20000816204744im_/http://home.golden.net/~getalong/cat4f.gif' height='110' alt='dance! dance!'>")
+
+  document.write("<img src='https://chezzkidsarchive.neocities.org/Dancing.gif' height='110' alt='dance! dance!'>")
+  
+  document.write("</center>")
+
+ } else if (chance == 17) {
+
+  document.writeln("<title> Pumkin Online English </title>")
+ 
+  document.writeln("<style> video { border: 10px solid #000000; width:66%; height:66%; }")
+
+  document.writeln("body { background:#ff811e url('https://web.archive.org/web/20140908194206im_/http://2008.pumkin.com/images/bg_body.gif') no-repeat center top; }")
+
+  document.writeln("</style>")
+
+  document.writeln("<br>")
+
+  document.writeln("<center>")
+
+  document.writeln("<br>")
+
+  document.writeln("<img src='https://web.archive.org/web/20140908194205im_/http://2008.pumkin.com/images/logo-pumkin-main.gif' height='200' alt='pumping my kins'>")
+
+  document.writeln("<h1> --- Welcome To Pumworld! --- </h1>")
+
+  document.writeln("<video src='assets/viewingpumkinintro2.mov'></video>")
+
+  document.writeln("<br>")
+
+  document.writeln("<br>")
+
+  document.writeln("<a href='https://web.archive.org/web/20020810030619/http://www.pum-kin.com/'><h1> Click Here To Explore More!</h1></a>")
+
+  document.writeln("</center>")
+  
+ } else if (chance == 18) {
+
+  changemusic(mus_lithium)
+
+  document.writeln("<title> Lithium Oxide </title>")
+
+  document.writeln("<script src='js/canvas_staticscreen.js'><" + "/script>")
+
+  document.writeln("<" + "script> in" + "it(); </" + "script>")
+
+  document.writeln("<" + "style>")
+  document.writeln("body {")
+  document.writeln("background-image: url('http://web.archive.org/web/20020305234012im_/http://furby.com/games/cliffhanger/graphics/gamestile.jpg');")
+  document.writeln("}")
+  document.writeln("h1 { color: black; }")
+  document.writeln("canvas { border: 10px solid #000000; }")
+  document.writeln("</style>")
+
+  document.writeln("<center>")
+
+  document.writeln("<br>")
+
+  document.writeln("<h1> Lithium Oxide On The Menu Today! </h1>")
+
+  document.writeln("<br>")
+
+  document.writeln("<h2> I wonder what's on the TV </h2>")
+
+  document.writeln("<br>")
+
+  document.writeln("<canvas id='staticscreen1' width='450' height='400' style=background-color:gray> You need an updated version of Macromedia Flash Player! </canvas>")
+
+  document.writeln("<br>")
+
+  for (let i = 0; i < 38; i++) { 
+   document.write("<img src='https://web.archive.org/web/19990421044406im_/http://www.hamsterdance.com/hamu.gif' height='110' alt='dance! dance!'>")
+  }
+  
+  document.writeln("<br>")
+  document.writeln("<br>")
+
+  document.writeln("</center>")
+
+  document.writeln("<" + "script> in" + "it(); </" + "script>")
+
+ } else if (chance == 19) {
+
+  // Coming Soon!
+
+ }
+
+}
+
+</script>
+
+<center>
+
+<hr>
+
+<h2> Welcome To The Magic Button! </h2>
+<h6> I wonder what will happen </h6>
+
+<button type="button" onclick=blackmagic()>Magic Button</button>
+
+<hr>
+
+</center>

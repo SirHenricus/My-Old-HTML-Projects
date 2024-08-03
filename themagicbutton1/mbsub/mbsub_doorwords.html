@@ -1,0 +1,163 @@
+
+<script src="magicbutton1/js/helpfulfunctions_copy.js"></script>
+
+<title> Whats the magic word? </title>
+
+<style> 
+
+body {
+ background-color: navy;
+}
+
+h1 {
+ color: white;
+}
+
+h2 {
+ color: white;
+}
+
+p {
+ color: white;
+}
+
+</style>
+
+<script>
+
+// Music
+
+var jingle = new Audio('subasset/record_chezzkids_cartoonyjingle.wav');
+jingle.volume = 0.4;
+jingle.loop = false;
+
+function changemusic(song) {
+
+ jingle.pause();
+
+ jingle = new Audio(song);
+
+ jingle.volume = 1;
+ jingle.loop = true;
+
+ jingle.play();
+
+ console.info("Now Playing: " + song)
+
+}
+
+</script>
+
+<script>
+
+// Misc.
+
+var p1done = 0
+
+var nevertheless = "a little field of flowers"
+
+var img1 = "https://chezzkidsarchive.neocities.org/crunchy.png"
+var img2 = "https://chezzkidsarchive.neocities.org/no%20cheating.jpg"
+var img3 = "https://chezzkidsarchive.neocities.org/hi.png"
+var mus2 = "subasset/record_chezzkids_fieldflowers.wav"
+
+// Submit Animation
+
+function worthysequence(mode) {
+
+  if (mode == 1) {
+
+   changemusic(mus2)
+   
+   document.write("<title> where they died </title>")
+    
+   document.write("<style>")
+   document.write("body {")
+   document.write("background-image: url('https://chezzkidsarchive.neocities.org/happy.jpg');")
+   document.write("}")
+   document.write("</style>")
+
+   document.write("<center>")
+
+   document.write("<img src='https://chezzkidsarchive.neocities.org/present.PNG' height='250' alt='çç©ˆ¬¥ø∫˙¨©ˆ˚'>")
+
+   document.write("<h2> So you know where they died, Huh? </h2>")
+   document.write("<h2> Good for you... </h2>")
+
+   for (let i = 0; i < 99; i++) { 
+     document.write("<br>")
+   }
+
+   document.write("<p> big fat hairy deal </p>")
+
+   document.write("</center>")
+
+  } else {
+
+   jingle.play();
+
+   document.getElementById("doorimg").src = img3
+   document.getElementById("doorimg").height = 100
+   document.body.style.backgroundColor = "black"
+   document.getElementById("heading").innerHTML = ""
+   document.getElementById("temp").innerHTML = "you are not worthy"
+   document.getElementById("worthyinput").remove();
+
+  }
+
+}
+
+</script>
+
+<script>
+
+// Submission Check
+
+function passcheck() {
+ if (p1done == 0) {
+   passinput = document.getElementById("worthyinput").value;
+
+   p1done = 1
+
+   if (passinput == nevertheless) {
+    console.log(":)")
+    worthysequence(1);
+   } else {
+    console.log(":(")
+    worthysequence(0);
+   }
+
+ }
+}
+
+</script>
+
+<center>
+
+<br>
+
+<h1 id="heading"> Do you think your worthy? </h1>
+
+<br> 
+
+<h2 id="temp"> Time to prove yourself </h2>
+
+<br>
+
+<input type="text" id="worthyinput">
+
+<br>
+<br>
+<br>
+<br>
+
+<a href="javascript:passcheck();">
+
+<img id="doorimg" src="subasset/chezzkids_tripdoorcropped.png" height="400" alt="gateway">
+
+</a>
+
+</center>
+
+<br>
+<br>
