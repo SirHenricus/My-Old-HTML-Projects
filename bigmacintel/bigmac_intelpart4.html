@@ -1,0 +1,195 @@
+
+<title> I don't even know anymore </title>
+
+<link rel="stylesheet" href="/css/brazenbeige.css"
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script src="/helpfulfunctions.js"></script>
+
+<style>
+
+#hatbook{
+  border: 0px solid #ffffff;
+  width:100%;
+  height:100%;
+}
+
+</style>
+
+<script>
+
+// Music
+
+console.log("you cheeky little bastard")
+
+var music = new Audio('https://chezzkidsarchive.neocities.org/download(4).mp3');
+music.volume = 0.4;
+music.loop = true;
+
+music.play();
+
+// Music Changer
+
+function changemusic(song) {
+
+ music.pause();
+
+ music = new Audio(song);
+
+ music.volume = 0.4;
+ music.loop = true;
+
+ music.play();
+
+ console.log("Now Playing: " + song)
+
+}
+
+</script>
+
+<script>
+
+// Other Music Choices
+
+var othersong1 = "https://web.archive.org/web/20211024020956id_/https://play.cprewritten.net/assets/content/global/audio/haunted_disco.mp3"
+
+var othersong2 = "https://chezzkidsarchive.neocities.org/sea.mp3"
+
+var othersong3 = "https://chezzkidsarchive.neocities.org/elevati.mp3"
+
+var othersong4 = "https://chezzkidsarchive.neocities.org/ssong.mp3"
+
+var othersong4 = "https://chezzkidsarchive.neocities.org/poundingfeeling.mp3"
+
+var othersong5 = "https://chezzkidsarchive.neocities.org/chezzysynth.mp3"
+
+var othersong6 = "https://chezzkidsarchive.neocities.org/ssong.mp3"
+
+// Misc Sounds
+
+var screamsnd = "https://chezzkidsarchive.neocities.org/turnthatoffitslate.mp3"
+
+// One Moment Crash
+
+function oopsy() {
+
+changemusic(screamsnd);
+
+console.warn("my face feels like its on fire it stings so much");
+
+sleep(200)
+
+loopcrash();
+
+}
+
+</script>
+
+<script>
+
+// Text Change Thing
+
+var zenofpy = "The Zen of Python, by Tim Peters Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex. Complex is better than complicated. Flat is better than nested. Sparse is better than dense. Readability counts. Special cases aren't special enough to break the rules. Although practicality beats purity. Errors should never pass silently. Unless explicitly silenced. In the face of ambiguity, refuse the temptation to guess. There should be one-- and preferably only one --obvious way to do it. Although that way may not be obvious at first unless you're Dutch. Now is better than never. Although never is often better than *right* now. If the implementation is hard to explain, it's a bad idea. If the implementation is easy to explain, it may be a good idea. Namespaces are one honking great idea -- let's do more of those!"
+
+subway = "ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way ostia subj way"
+
+var mrtext = ["hello","I change","Isn't that cool?","I bet you aren't reading this","I'll just put something random","shabalabadingdong","ok then umm","I know you guys like python","soo umm",zenofpy,"did that show up right?","he got some ramen noodle legs","how about I show an emoji?","🦵","utf8 is cool","ooh here's a good one for ya",subway,"how ya like them apples","hahahahahahah","you suck","if you click again i'll divide by zero","I tried to warn ya",999 / 0,"see nothing happens","I tricked you lol","THE END","will now restart"]
+
+var textindex = 0;
+
+function textmanbit() {
+
+ var textplace = mrtext[textindex];
+
+ if (textindex == mrtext.length) {
+ 
+  textindex = 0
+
+  console.log("Changing Text Reset")
+
+ } else if (textindex != mrtext.length) 
+
+  textindex = textindex + 1
+
+  document.getElementById('textman').innerHTML = textplace;
+
+}
+
+</script>
+
+<br>
+
+<center>
+
+<img src="https://chezzkidsarchive.neocities.org/smiley-faces7.gif" height="90" alt="cooler"><img src="https://chezzkidsarchive.neocities.org/Dancing.gif" height="90" alt="I hate you">
+
+<h1> Big Mac Intel Part 4!!! </h1>
+<h2> I don't know either </h2>
+
+<hr>
+<br>
+<h2> Want better music? Just click here! </h2>
+<br>
+
+<a href="javascript:changemusic(othersong1);">Music Choice 1</a>
+<br>
+<br>
+<a href="javascript:changemusic(othersong2);">Music Choice 2</a>
+<br>
+<br>
+<a href="javascript:changemusic(othersong3);">Music Choice 3</a>
+<br>
+<br>
+<a href="javascript:changemusic(othersong4);">Music Choice 4</a>
+<br>
+<br>
+<a href="javascript:changemusic(othersong5);">Music Choice 5</a>
+<br>
+<br>
+<a href="javascript:changemusic(othersong6);">Music Choice 6</a>
+<br>
+<br>
+<hr>
+
+<h2> Time Travel Zone! </h2>
+
+<p> Note: this only works sometimes </p>
+
+<a href="javascript:history.go(-1)">Go Back In Time</a>
+<br>
+<br>
+<a href="javascript:history.go(1)">Go Forward In Time</a>
+<br>
+<br>
+<a href="javascript:history.go(-99)">Go Really Far Back!</a>
+<br>
+<br>
+<hr>
+
+<h2> one moment... </h2>
+
+<a href="javascript:oopsy();" target="_top"><img src="https://chezzkidsarchive.neocities.org/nevermore.jpg" width=75 height=75 border=0 alt="help me"></a>
+<br>
+<hr>
+
+<h2> Homestar Runner Book - Where My Hat Is At?
+<br>
+<br>
+<iframe width="580" height="450" src="https://old.homestarrunner.com/hs1.html"></iframe>
+<br>
+<hr>
+
+<h2> CHANGING TEXT! </h2>
+
+<p id="textman">
+:)
+</p>
+
+<button type="button" onclick=textmanbit()>Click For Change!</button>
+
+<hr>
+
+<h2> -=THE END=- </h2>
+
+</center>
